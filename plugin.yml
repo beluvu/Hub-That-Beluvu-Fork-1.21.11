@@ -1,0 +1,42 @@
+name: HubThat
+version: '${project.version}'
+author: lol7344
+main: net.mindoverflow.hubthat.Main
+api-version: '1.21'
+description: Hub, spawn and world teleport commands.
+commands:
+  hubthat:
+    description: Main command for HubThat (reload).
+    usage: /hubthat [reload]
+  setspawn:
+    description: Set the spawn for a world at your location.
+  spawn:
+    description: Go to the current world's spawn.
+  sethub:
+    description: Set the hub of the server.
+  hub:
+    description: Go to the hub of the server.
+  worldtp:
+    description: Go to a specific world.
+    usage: /worldtp <world>
+  worldlist:
+    description: List all the worlds.
+permissions:
+  hubthat.spawn:
+    default: true
+  hubthat.hub:
+    default: true
+  hubthat.setspawn:
+    default: op
+  hubthat.sethub:
+    default: op
+  hubthat.nospawndelay:
+    default: op
+  hubthat.nohubdelay:
+    default: op
+  hubthat.gotoworld:
+    default: op
+  hubthat.listworlds:
+    default: op
+  hubthat.reloadconfig:
+    default: op
